@@ -1,5 +1,6 @@
 body{
   height: 123rem;
+  font-family: 'Roboto', sans-serif;
 }
 /* Resolution 520px */
 .menu {
@@ -7,10 +8,11 @@ body{
   flex-wrap: wrap;
   justify-content: center;
   position: fixed;
-  width: 100vw;
-  padding: 1rem;
 
-  max-width: 31rem;
+  max-width: 100vw;
+
+  width: 100vw;
+ 
 }
 
 .menu-pesquisa {
@@ -37,8 +39,24 @@ body{
   padding: 0 2rem;
 }
 
-nav {
+.menu-nav {
+  order: 4;
   background: #8158c5;
+  padding: 1rem;
+}
+
+.menu-nav ul{
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-nav a{
+  text-align: center;
+  margin: .5rem;
+  font-weight: 300;
+  color: #ffffff;
+  text-decoration: none;
 }
 /* Resolution 768px */
 @media (min-width: 768px) {}
