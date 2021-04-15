@@ -101,6 +101,7 @@ select {
 
 /* Resolution 768px */
 @media (min-width: 768px) {
+  /* Header */
   .menu {
     justify-content: space-evenly;
 
@@ -154,6 +155,7 @@ select {
 
   }
 
+  /* Header */
   .menu {
     align-items: center;
 
