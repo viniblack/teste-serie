@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto';
-
+  background-color: red;
   color: #ffffff;
   height: 123rem;
 }
@@ -13,34 +13,11 @@ body {
   justify-content: center;
   position: fixed;
 
+  background-color: #ffffff;
   max-width: 100vw;
-  padding-top: 1rem;
+  padding-bottom: 1rem;
   width: 100vw;
-
-}
-
-.menu-pesquisa {
-  background-image: url(../img/menu/lupa.png);
-  background-position: right;
-  background-repeat: no-repeat;
-
-  background-position-x: 95%;
-  height: 2rem;
-  margin-top: .5rem;
-  order: 4;
-  padding-left: 0;
-  width: 22rem;
-
-}
-
-input[type=text],
-select {
-  border: 1px solid #ccc;
-  border-radius: 1px;
-  box-sizing: border-box;
-  display: inline-block;
-  padding: 15px 20px;
-
+  z-index: 99;
 }
 
 .menu .logo {
@@ -69,11 +46,6 @@ select {
 
 }
 
-#links li {
-  margin: .2rem 0;
-
-}
-
 .menu-nav a {
   text-align: center;
 
@@ -89,7 +61,36 @@ select {
 
   align-items: center;
   background: #8158c5;
+  margin-bottom: -1rem;
   width: 100vw;
+}
+
+#links li {
+  margin: .3rem 0;
+
+}
+
+.menu-pesquisa {
+  background-image: url(../img/menu/lupa.png);
+  background-position: right;
+  background-repeat: no-repeat;
+
+  background-position-x: 95%;
+  height: 2rem;
+  margin-top: .5rem;
+  order: 4;
+  padding-left: 0;
+  width: 22rem;
+
+}
+
+input[type=text],
+select {
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 15px 20px;
 
 }
 
@@ -102,15 +103,10 @@ select {
 @media (min-width: 768px) {
   .menu {
     justify-content: space-evenly;
-  }
 
-  .menu-pesquisa {
-    order: 2;
-    width: 10rem;
   }
 
   .menu .logo {
-
     order: 3;
 
   }
@@ -118,6 +114,7 @@ select {
   .menu-perfil {
     order: 4;
     padding: 0;
+
   }
 
   .menu-nav {
@@ -125,15 +122,23 @@ select {
 
   }
 
+  .menu-pesquisa {
+    order: 2;
+    width: 10rem;
+
+  }
+
   input[type=text],
   select {
-    padding: 0 10px;
     margin-left: -2rem;
+    padding: 0 10px;
+
   }
 
   .icon {
     order: 1;
     padding: .5rem 1rem;
+
   }
 
 }
@@ -142,26 +147,36 @@ select {
 @media (min-width: 1024px) {
   .menu {
     align-items: center;
+    padding-bottom: 0;
   }
 
   .menu .logo {
     height: 4rem;
+
   }
 
-  .menu-pesquisa {
-    width: 12rem;
-  }
 
   #links {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 1rem;
+
     font-size: .9rem;
+    height: 4rem;
+
   }
 
   #links li {
     margin: 0 .2rem;
+
+  }
+
+  #links :hover {
+    background-color: black;
+  }
+
+  .menu-pesquisa {
+    width: 12rem;
 
   }
 

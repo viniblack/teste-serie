@@ -1,0 +1,19 @@
+/* Resolution 520px */
+main {
+  display: flex;
+}
+
+.banner {
+  padding-top: 14vh;
+  position: relative;
+}
+
+.banner img {
+  max-width: 100vw;
+}
+
+/* Resolution 768px */
+@media (min-width: 768px) {}
+
+/* Resolution 1024px */
+@media (min-width: 1024px) {}
