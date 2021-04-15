@@ -29,11 +29,21 @@
 
 <body>
 	<header class="menu">
-		<img class="logo" src="img/menu/logo.png" alt="logo Pet Store">
+		<a href="javascript:void(0);" class="icon" onclick="navOpen()">
+			<span class="material-icons-outlined">
+				<img src="img/hamburger.svg" alt="menu">
+			</span>
+		</a>
+		<h1>
+			<a href="#">
+				<img class="logo" src="img/menu/logo.png" alt="logo Pet Store">
+			</a>
+		</h1>
 		<div class="menu-perfil">
 			<a href="#"><img src="img/menu/login.png" alt="perfil"></a>
-			<a href="#"><img src="img/menu/carrinho.png" alt=""></a>
+			<a href="#"><img src="img/menu/carrinho.png" alt="carrinho"></a>
 		</div>
+		<input class="menu-pesquisa" type="text" placeholder="Pesquisar...">
 		<nav class="menu-nav">
 			<ul id="links">
 				<li><a href="#">Categoria lorem</a></li>
@@ -45,21 +55,24 @@
 				<li><a href="#">Categoria ipsum</a></li>
 			</ul>
 		</nav>
-		<input class="menu-pesquisa" type="text" placeholder="Pesquisar...">
-		<a href="javascript:void(0);" class="icon" onclick="navOpen()">
-			<span class="material-icons-outlined">
-				<img src="img/hamburger.svg" alt="">
-			</span>
-		</a>
 	</header>
 	<main>
 		<section class="banner">
-			<img src="img/outros/banner.png" alt="">
+			<img src="img/outros/banner.png" alt="banner">
 		</section>
 		<section class="categorias">
-
+			<a href="">
+				<img src="img/categoria/racoes.png" alt="categoria racoes">
+			</a>
+			<a href="">
+				<img src="img/categoria/brinquedo.png" alt="categoria brinquedos">
+			</a>
+			<a href="">
+				<img src="img/categoria/acessorio.png" alt="categoria acessorios">
+			</a>
 		</section>
 	</main>
+
 </body>
 
 </html>

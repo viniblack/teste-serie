@@ -15,25 +15,22 @@ body {
 
   background-color: #ffffff;
   max-width: 100vw;
-  padding-bottom: 1rem;
+  padding: 1rem 0;
   width: 100vw;
   z-index: 99;
 }
 
 .menu .logo {
   height: 3rem;
-  order: 1;
 
 }
 
 .menu-perfil {
-  order: 2;
   padding: 0 2rem;
 
 }
 
 .menu-nav {
-  order: 6;
   padding-top: .5rem;
 
 }
@@ -67,7 +64,6 @@ body {
 
 #links li {
   margin: .3rem 0;
-
 }
 
 .menu-pesquisa {
@@ -78,7 +74,6 @@ body {
   background-position-x: 95%;
   height: 2rem;
   margin-top: .5rem;
-  order: 4;
   padding-left: 0;
   width: 22rem;
 
@@ -95,8 +90,7 @@ select {
 }
 
 .icon {
-  order: 3;
-
+  padding: .5rem 1rem;
 }
 
 /* Resolution 768px */
@@ -107,24 +101,28 @@ select {
 
   }
 
+  .icon{
+    order: -1;
+  }
+
   .menu .logo {
-    order: 3;
+    order: 1;
 
   }
 
   .menu-perfil {
-    order: 4;
+    order: 2;
     padding: 0;
 
   }
 
   .menu-nav {
-    order: 5;
+    order: 3;
 
   }
 
   .menu-pesquisa {
-    order: 2;
+    order: -1;
     width: 10rem;
 
   }
@@ -133,13 +131,6 @@ select {
   select {
     margin-left: -2rem;
     padding: 0 10px;
-
-  }
-
-  .icon {
-    order: 1;
-    padding: .5rem 1rem;
-
   }
 
 }
@@ -151,7 +142,7 @@ select {
     justify-content: center;
 
     margin: 0 auto;
-    max-width: 1170px !important;
+    max-width: 1170px;
 
   }
 
@@ -159,7 +150,7 @@ select {
   .menu {
     align-items: center;
 
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding-bottom: 0;
   }
 
@@ -171,21 +162,19 @@ select {
   #links {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
 
-    font-size: .9rem;
-    height: 4rem;
-
+    font-size: .8rem;
   }
 
   #links li {
-    margin: 0 .5rem;
+    margin: 0 1vw;
     padding: 1.5rem 0;
 
   }
 
   #links li a {
-    padding: 1.5rem 0;
+    padding: 1.3rem 0;
   }
 
   #links :hover {
@@ -193,6 +182,7 @@ select {
   }
 
   .menu-pesquisa {
+    margin-left: 1rem;
     width: 12rem;
   }
 
