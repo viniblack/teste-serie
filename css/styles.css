@@ -1,2 +1,47 @@
-/* Coloque o CSS neste arquivo */
+body{
+  height: 123rem;
+}
+/* Resolution 520px */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+  padding: 1rem;
 
+  max-width: 31rem;
+}
+
+.menu-pesquisa {
+  background-image: url(../img/menu/lupa.png);
+  background-position: right;
+  background-repeat: no-repeat;
+
+
+  background-position-x: 17rem;
+  height: 2rem;
+  margin-top: .5rem;
+  order: 3;
+  padding-left: 0;
+  width: 20rem;
+}
+
+.menu .logo {
+  height: 3rem;
+  order: 1;
+}
+
+.menu-perfil {
+  order: 2;
+  padding: 0 2rem;
+}
+
+nav {
+  background: #8158c5;
+}
+/* Resolution 768px */
+@media (min-width: 768px) {}
+
+/* Resolution 1024px */
+@media (min-width: 1024px) {}
