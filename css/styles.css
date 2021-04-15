@@ -24,10 +24,10 @@ body {
   background-position: right;
   background-repeat: no-repeat;
 
-  background-position-x: 19.5rem;
+  background-position-x: 95%;
   height: 2rem;
   margin-top: .5rem;
-  order: 5;
+  order: 4;
   padding-left: 0;
   width: 22rem;
 
@@ -94,12 +94,51 @@ select {
 }
 
 .icon {
-  order: 4;
+  order: 3;
 
 }
 
 /* Resolution 768px */
 @media (min-width: 768px) {
+  .menu {
+    justify-content: space-evenly;
+  }
+
+  .menu-pesquisa {
+    order: 2;
+    width: 10rem;
+  }
+
+  .menu .logo {
+    order: 3;
+
+  }
+
+  .menu-perfil {
+    order: 4;
+    padding: 0;
+  }
+
+  .menu-nav {
+    order: 5;
+
+  }
+
+  input[type=text],
+  select {
+    padding: 0 10px;
+    margin-left: -2rem;
+  }
+
+  .icon {
+    order: 1;
+    padding: .5rem 1rem;
+  }
+
+}
+
+/* Resolution 1024px */
+@media (min-width: 1024px) {
   #links {
     display: block;
 
@@ -110,6 +149,3 @@ select {
 
   }
 }
-
-/* Resolution 1024px */
-@media (min-width: 1024px) {}
