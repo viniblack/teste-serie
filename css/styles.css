@@ -8,7 +8,6 @@ body {
   flex-wrap: wrap;
 }
 
-/* Resolution 520px */
 /* Header */
 .menu {
   display: flex;
@@ -192,6 +191,72 @@ form input[type=submit] {
   cursor: pointer;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.redes-sociais {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 20rem;
+  margin: .5rem auto;
+}
+
+.redes-sociais img {
+  display: inline-block;
+  margin: 1rem;
+}
+
+.endereco {
+  font-size: .7rem;
+  margin: 0.5rem 2rem;
+  text-align: center;
+}
+
+.outras-pag {
+  margin-top: 1rem;
+  display: block;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: normal;
+  margin: 0 1rem;
+  width: 10rem;
+}
+
+footer h2 {
+  color: #8158c5;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+footer li {
+  margin: .8rem 0;
+  font-weight: 600;
+}
+
+.test {
+  display: flex;
+  justify-content: center;
+  margin-left: 6rem;
+  flex-wrap: wrap;
+}
+
+.pagamento {
+  margin: 2rem 0;
+}
+
+.pagamento img {
+  width: 15rem;
+}
+
 /* Resolution 768px */
 @media (min-width: 768px) {
 
@@ -333,12 +398,12 @@ form input[type=submit] {
     flex-wrap: wrap;
   }
 
-  .vantagem{
+  .vantagem {
     flex-wrap: nowrap;
   }
 
   form input[type=submit] {
     padding: .5rem 1.5rem;
     margin: 1rem 0rem;
-}
+  }
 }
