@@ -19,7 +19,7 @@ main {
 }
 
 /* Categorias */
-.categorias {
+.categoria {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -29,7 +29,7 @@ main {
   padding: .5rem 0;
 }
 
-.categorias img {
+.categoria img {
   object-fit: cover;
 
   height: 8.5rem;
@@ -37,6 +37,93 @@ main {
   max-width: 100vw;
   padding: 0rem;
   width: 33rem;
+}
+
+/* Produtos */
+.protudo {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  color: #7f7f7f;
+  margin: 1rem 0;
+}
+
+.protudo h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.protudo figure {
+  position: relative;
+  margin: .5rem 0;
+}
+
+.produto-descricao {
+  display: flex;
+  flex-direction: column;
+}
+
+.produto-descricao span {
+  margin: .3rem 0;
+}
+
+.produto-titulo {
+  font-weight: 500;
+}
+
+.produto-preco {
+  font-weight: bold;
+}
+
+.produto-parcela {
+  margin-top: .1rem !important;
+  font-size: .9rem;
+  font-weight: 400;
+}
+
+.produto-desconto-porcento {
+  position: absolute;
+  color: #ffffff;
+  background: #8158c5;
+  padding: .75rem;
+  left: 0;
+
+}
+
+.protudo-desconto {
+  margin-top: .3rem;
+}
+
+.produto-preco-antigo {
+  margin-right: 1rem !important;
+  text-decoration: line-through;
+}
+
+.ttt{
+  position: absolute;
+  height: 80%;
+  width: 100%;
+  top: 0;
+  opacity: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ttt:hover {
+  background: rgba(129, 88, 197, .5);
+  opacity: 1;
+}
+
+.text {
+  background-color: #ffa200;
+  color: white;
+  font-size: 16px;
+  padding: 1rem 1rem;
+  text-transform: uppercase;
 }
 
 /* Resolution 768px */
@@ -52,7 +139,7 @@ main {
   }
 
   /* Categorias */
-  .categorias {
+  .categoria {
 
     flex-direction: row;
     justify-content: space-evenly;
@@ -61,7 +148,7 @@ main {
 
   }
 
-  .categorias img {
+  .categoria img {
     height: 4rem;
     width: 14rem;
 
@@ -82,8 +169,7 @@ main {
   }
 
   /* Categorias */
-  .categorias {
-
+  .categoria {
     flex-direction: row;
     justify-content: center;
 
@@ -91,10 +177,10 @@ main {
 
   }
 
-  .categorias img {
+  .categoria img {
     height: 10vh;
-    width: 22vw;
     margin: 0 .5rem;
+    width: 22vw;
 
   }
 }
