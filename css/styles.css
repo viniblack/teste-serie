@@ -3,7 +3,9 @@ body {
   /* background-color: red; */
   color: #ffffff;
   height: 123rem;
-  max-width: 1170px, ;
+  max-width: 1170px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* Resolution 520px */
@@ -97,6 +99,7 @@ select {
 /* Newsletter */
 .newsletter {
   background: #8158c5;
+  width: 100vw;
 }
 
 .vantagem {
@@ -230,6 +233,28 @@ form input[type=submit] {
     padding: 0 10px;
   }
 
+
+  /* Newsletter */
+  .vantagem {
+    border-bottom: 2px solid #ffa200;
+    width: 70vw;
+    justify-content: center;
+  }
+
+  .vantagem p {
+    font-size: .7rem;
+    text-align: center;
+
+  }
+
+  .newsletter-informacao {
+    margin: 1rem 5rem;
+  }
+
+  form input[type=submit] {
+    padding: 1rem 11rem;
+  }
+
 }
 
 /* Resolution 1024px */
@@ -293,4 +318,25 @@ form input[type=submit] {
     display: none;
 
   }
+
+  .newsletter-informacao {
+    width: 100vw;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .newsletter {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .vantagem{
+    flex-wrap: nowrap;
+  }
+
+  form input[type=submit] {
+    padding: .5rem 1.5rem;
+    margin: 1rem 0rem;
+}
 }
