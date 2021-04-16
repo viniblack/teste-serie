@@ -6,8 +6,3 @@ function navOpen() {
     nav.style.display = "flex";
   }
 }
-
-function testt() {
-  let tag = document.getElementsByClassName("produto-tag");
-  
-}
