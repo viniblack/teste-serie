@@ -323,6 +323,8 @@ form input[type=submit] {
     width: 100vw;
     justify-content: center;
     flex-direction: column;
+
+    width: 89vw;
   }
 
   .newsletter {
