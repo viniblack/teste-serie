@@ -3,7 +3,7 @@ body {
   /* background-color: red; */
   color: #ffffff;
   height: 123rem;
-  max-width: 1170px,;
+  max-width: 1170px, ;
 }
 
 /* Resolution 520px */
@@ -94,19 +94,111 @@ select {
   padding: .5rem 1rem;
 }
 
-.newsletter{
-  
+/* Newsletter */
+.newsletter {
+  background: #8158c5;
+}
+
+.vantagem {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0 5rem;
+}
+
+.vantagem p::before {
+  content: url(../img/outros/pata.png);
+  margin: .5rem;
+}
+
+.vantagem p {
+  text-transform: uppercase;
+  font-size: .8rem;
+  color: #ffffff;
+  margin: 1rem;
+}
+
+.vantagem p strong {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.newsletter-informacao {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  margin: 0 5rem;
+}
+
+.newsletter-informacao h3 {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  color: #ffffff;
+  margin: .5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.newsletter-informacao p {
+  font-size: .9rem;
+  line-height: 1.3rem;
+  color: #ffffff;
+  margin: 1rem;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+form input {
+  margin: 0 .5rem;
+}
+
+form input[type=text],
+form input[type=email] {
+  background: #8158c5;
+  color: #ffffff;
+  border: none;
+  border-bottom: 1px solid #ffffff !important;
+  padding: .5rem 0;
+  margin: 1rem;
+}
+
+form input[type=text]:focus-visible,
+form input[type=email]:focus-visible {
+  outline: none;
+}
+
+form input::placeholder {
+  color: #ffffff;
+}
+
+form input[type=submit] {
+  background-color: #ffa200;
+  border: none;
+  color: white;
+  padding: 1rem 4rem;
+  text-decoration: none;
+  margin: 1rem 3rem;
+  cursor: pointer;
 }
 
 /* Resolution 768px */
 @media (min-width: 768px) {
+
   /* Header */
   .menu {
     justify-content: space-evenly;
 
   }
 
-  .icon{
+  .icon {
     order: -1;
   }
 

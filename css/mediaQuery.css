@@ -72,6 +72,10 @@
 
   }
 
+  .vantagem{
+    border-bottom: 12px solid red!important;
+  }
+
 }
 
 /* Resolution 1024px */
