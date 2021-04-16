@@ -4,6 +4,7 @@ main {
   display: flex;
   padding-top: 6rem;
   flex-direction: column;
+
 }
 
 .banner {
@@ -19,7 +20,7 @@ main {
 }
 
 /* Categorias */
-.categoria {
+.categoria-produtos {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -27,9 +28,10 @@ main {
   background-color: #ffa200;
   margin-top: -.25rem;
   padding: .5rem 0;
+  max-width: 1170px;
 }
 
-.categoria img {
+.categoria-produtos img {
   object-fit: cover;
 
   height: 8.5rem;
@@ -40,7 +42,7 @@ main {
 }
 
 /* Produtos */
-.produto {
+.produtos-novidade {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -51,24 +53,56 @@ main {
   margin: 2rem 0;
 }
 
-.produto h2 {
+.produtos-novidade h2 {
   text-transform: uppercase;
 
+  width: 100vw;
   font-size: 2rem;
   font-weight: bold;
 }
 
-.produto figure {
+.produtos-novidade figure {
   position: relative;
+
   margin: 1rem 0;
+}
+
+.produto-tag {
+  position: absolute;
+  text-transform: uppercase;
+
+  background: #8158c5;
+  color: #ffffff;
+  font-weight: 500;
+  left: 0;
+  padding: .75rem;
+  z-index: 3;
+}
+
+.produto-compra-rapida {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+
+  height: 80%;
+  opacity: 0;
+  top: 0;
+  width: 100%;
+
+}
+
+.produto-compra-rapida:hover {
+  background: rgba(129, 88, 197, .5);
+  opacity: 1;
 }
 
 .produto-descricao {
   display: flex;
-
-  padding-top: 3rem;
-
   flex-direction: column;
+
+  padding-top: 1rem;
+
 }
 
 .produto-descricao span {
@@ -77,6 +111,17 @@ main {
 
 .produto-titulo {
   font-weight: 500;
+}
+
+.produto-desconto {
+  margin-top: .3rem;
+}
+
+
+.produto-preco-antigo {
+  text-decoration: line-through;
+
+  margin-right: 1rem !important;
 }
 
 .produto-preco {
@@ -89,54 +134,15 @@ main {
   font-weight: 400;
 }
 
-.produto-tag {
-  position: absolute;
-  color: #ffffff;
-  background: #8158c5;
-  padding: .75rem;
-  left: 0;
+.produto-compra-rapida-text {
   text-transform: uppercase;
-  font-weight: 500;
 
-}
-
-.produto-imagem {
-  transform: scale(1.3);
-}
-
-.produto-desconto {
-  margin-top: .3rem;
-}
-
-.produto-preco-antigo {
-  margin-right: 1rem !important;
-  text-decoration: line-through;
-}
-
-.produto-compra-rapida {
-  position: absolute;
-  height: 80%;
-  width: 100%;
-  top: 0;
-  opacity: 0;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.produto-compra-rapida:hover {
-  background: rgba(129, 88, 197, .5);
-  opacity: 1;
-}
-
-.text {
   background-color: #ffa200;
-  color: white;
+  color: #ffffff;
   font-size: 16px;
   padding: 1rem 1rem;
-  text-transform: uppercase;
 }
+
 
 /* Resolution 768px */
 @media (min-width: 768px) {
@@ -152,41 +158,50 @@ main {
 
   /* Categorias */
   .categoria {
+    background-color: #ffa200;
+    margin-top: -.25rem;
+    padding: .5rem 0;
 
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .categoria-produtos {
+    display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
 
     padding: .5rem 0;
 
   }
 
-  .categoria img {
+  .categoria-produtos img {
     height: 4rem;
     width: 14rem;
+    margin: 0 1rem;
 
   }
 
-  .produto {
+  /* Produtos */
+  .produtos-novidade {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
 
   }
 
-  .produto h2 {
-    width: 100vw;
-    padding: 5px;
+  .produtos-novidade h2 {
     font-size: 1.5rem;
     margin-bottom: 2rem;
+
   }
 
-  .produto-descricao{
-    margin-top: 3rem;
+  .produtos-novidade figure {
+    margin: 1rem;
+
   }
 
-  .produto-imagem {
-    transform: scale(1.3);
-  }
 }
 
 /* Resolution 1024px */
@@ -197,12 +212,12 @@ main {
   }
 
   .banner img {
-    height: 40vh;
+    height: 39vh;
 
   }
 
   /* Categorias */
-  .categoria {
+  .categoria-produtos {
     flex-direction: row;
     justify-content: center;
 
@@ -210,14 +225,33 @@ main {
 
   }
 
-  .categoria img {
+  .categoria-produtos img {
     height: 10vh;
     margin: 0 .5rem;
     width: 22vw;
 
   }
 
-  .produto-imagem {
-    transform: scale(1);
+  /* Produto */
+
+  .produto {
+    display: flex;
+    justify-content: center;
+
   }
+
+  .produtos-novidade {
+    justify-content: flex-start;
+
+    margin-left: 3rem;
+    max-width: 1170px;
+    width: 95vw;
+
+  }
+
+  .produtos-novidade figure {
+    margin: .5rem;
+
+  }
+
 }
