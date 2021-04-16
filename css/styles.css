@@ -212,6 +212,7 @@ footer {
 .redes-sociais img {
   display: inline-block;
   margin: 1rem;
+  width: 2.5rem;
 }
 
 .endereco {
@@ -320,6 +321,23 @@ footer li {
     padding: 1rem 11rem;
   }
 
+  .endereco {
+    font-size: .7rem;
+    margin: 1rem 6rem;
+    text-align: center;
+  }
+
+  .test {
+    margin-left: 3rem;
+  }
+
+  .pagamento {
+    margin: 2rem 1rem;
+  }
+
+  .pagamento img{
+    width: 18rem;
+  }
 }
 
 /* Resolution 1024px */
