@@ -25,10 +25,14 @@ main {
   display: flex;
   flex-direction: column;
 
-  background-color: #ffa200;
+
   margin-top: -.25rem;
   padding: .5rem 0;
   max-width: 1170px;
+}
+
+.color-produto {
+  background-color: #ffa200;
 }
 
 .categoria-produtos img {
@@ -41,6 +45,16 @@ main {
   width: 33rem;
 }
 
+.categoria-animal {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.categoria-animal img {
+  max-width: 100vw;
+  margin: .5rem 0;
+}
+
 /* Produtos */
 .produtos-novidade {
   align-items: center;
@@ -51,6 +65,7 @@ main {
 
   color: #7f7f7f;
   margin: 2rem 0;
+
 }
 
 .produtos-novidade h2 {
@@ -59,12 +74,14 @@ main {
   width: 100vw;
   font-size: 2rem;
   font-weight: bold;
+
 }
 
 .produtos-novidade figure {
   position: relative;
 
   margin: 1rem 0;
+
 }
 
 .produto-tag {
@@ -77,6 +94,19 @@ main {
   left: 0;
   padding: .75rem;
   z-index: 3;
+
+}
+
+.produto-tag:last-child{
+  background: red;
+}
+
+.porcento::after{
+  content: "50% OFF";
+}
+
+.novo::after{
+  content: "NOVO";
 }
 
 .produto-compra-rapida {
@@ -95,6 +125,7 @@ main {
 .produto-compra-rapida:hover {
   background: rgba(129, 88, 197, .5);
   opacity: 1;
+
 }
 
 .produto-descricao {
@@ -107,14 +138,17 @@ main {
 
 .produto-descricao span {
   margin: .3rem 0;
+
 }
 
 .produto-titulo {
   font-weight: 500;
+
 }
 
 .produto-desconto {
   margin-top: .3rem;
+
 }
 
 
@@ -122,16 +156,19 @@ main {
   text-decoration: line-through;
 
   margin-right: 1rem !important;
+
 }
 
 .produto-preco {
   font-weight: bold;
+
 }
 
 .produto-parcela {
   margin-top: .1rem !important;
   font-size: .9rem;
   font-weight: 400;
+
 }
 
 .produto-compra-rapida-text {
@@ -141,6 +178,7 @@ main {
   color: #ffffff;
   font-size: 16px;
   padding: 1rem 1rem;
+
 }
 
 
@@ -158,13 +196,17 @@ main {
 
   /* Categorias */
   .categoria {
-    background-color: #ffa200;
+
     margin-top: -.25rem;
     padding: .5rem 0;
 
     display: flex;
     justify-content: center;
-    
+
+  }
+
+  .color-produto {
+    background-color: #ffa200;
   }
 
   .categoria-produtos {
@@ -172,6 +214,7 @@ main {
     flex-direction: row;
     justify-content: center;
 
+    margin: -0.5rem;
     padding: .5rem 0;
 
   }
@@ -179,9 +222,20 @@ main {
   .categoria-produtos img {
     height: 4rem;
     width: 14rem;
-    margin: 0 1rem;
+    margin: 0 .5rem;
 
   }
+
+  .categoria-animal {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .categoria-animal img {
+    max-width: 45vw;
+    margin: 0 1rem;
+  }
+
 
   /* Produtos */
   .produtos-novidade {
