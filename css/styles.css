@@ -7,6 +7,21 @@ body {
   max-width: 1170px;
 }
 
+.flutuante {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 999;
+  bottom: 1rem;
+  right: 2rem;
+  cursor: pointer;
+}
+
+.flutuante img {
+  width: 2.5rem;
+  margin-bottom: 1rem;
+}
+
 /* Header */
 .menu {
   display: flex;
@@ -271,7 +286,7 @@ footer li {
   align-items: center;
   display: flex;
   justify-content: center;
-  
+
   border-top: 1px solid #ccc;
   height: 3rem;
   margin: 0 auto;
@@ -292,6 +307,15 @@ footer li {
 
 /* Resolution 768px */
 @media (min-width: 768px) {
+
+  .flutuante {
+    bottom: 1rem;
+    right: 3rem;
+  }
+  
+  .flutuante img {
+    width: 3rem;
+  }
 
   /* Header */
   .menu {
@@ -400,6 +424,16 @@ footer li {
 
   }
 
+  .flutuante {
+
+    right: 10rem;
+  }
+  
+  .flutuante img {
+    width: 3rem;
+  }
+
+
   /* Header */
   .menu {
     align-items: center;
@@ -476,7 +510,7 @@ footer li {
   footer {
     align-items: center;
     flex-direction: row;
-    
+
     margin: 2rem 0;
     padding-bottom: 1rem;
   }
